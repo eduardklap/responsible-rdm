@@ -1,7 +1,7 @@
 ---
 title: 'Good file naming practices'
 teaching: 10
-exercises: 1
+exercises: 10
 ---
 
 ::: questions
@@ -149,6 +149,9 @@ Consider the following list of filenames in a research project (we have added a 
 | *essay_theory-of-mind_draft02.docx*                         |
 | *health-politics_cleaned_survey.csv ommoord-fieldnotes.txt* |
 :::
+
+:::
+
 :::
 
 ## References
