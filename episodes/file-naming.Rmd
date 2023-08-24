@@ -1,0 +1,165 @@
+---
+title: 'Good file naming practices'
+teaching: 10
+exercises: 1
+---
+
+::: questions
+-   How do I properly name files in my (research) projects?
+:::
+
+::: objectives
+-   Explain principles for good file names
+-   Demonstrate how to turn not-so-good file names into good file names
+:::
+
+## Introduction
+
+Good metadata and documentation of projects starts with properly naming the files and folders. Informative file names can be considered a basic but crucial example of metadata.
+
+#### Examples
+
+Here are some examples of good and bad file names:
+
+| :green_square: YES                  | :red_square: NO                                 |
+|--------------------------------|----------------------------------------|
+| 20220214_SampleSize_Paper.docx      | Paper.docx                                      |
+| Fig01-histogram-flankertask.png     | Figure 1.png                                    |
+| analysis01_descriptive-statistics.R | Eduard's filenames Use spaces and punctuation.R |
+| gambling_data_processed.csv         | Final_data(1).csv                               |
+
+Can you see why some file names are better than others?
+
+## Three principles for (file) names.
+
+Good file names are:
+
+1.  machine readable
+2.  human readable
+3.  making sorting and searching easy
+
+### Machine readable: be nice to machines
+
+Keep it simple:
+
+-   Use letters, numbers, hyphens and underscores... that's it
+
+-   Avoid spaces, punctuation, accented characters, case sensitivity
+    
+    -   paper_flanker-task_draft01.docx ✅
+
+    -   paper "flanker task" draft01(1).docx ❌
+
+
+-   Never have two files that differ only in case
+
+    -   Paper ideas.docx ❌
+    -   paper ideas.docx ❌
+
+-   Deliberate use of delimiters
+
+    -   Use hyphen `-` to mean "different words that are part of the same chunk"
+
+    -   Use underscore `_` to separate different chunks of metadata
+
+Using delimiters in this way makes it easier for software to recognize the right files for processing, and it also makes it easier to search for files later.
+
+::::::::::: prereq
+
+### Example
+
+Here is an example of the use of hyphens and underscores for file names using the [Brain Imaging Data Structure](https://bids.neuroimaging.io/) format:
+
+```         
+└─ sub-034/
+   └─ ses-01/
+      ├─ anat/
+      │  └─ sub-034_ses-01_T1w.nii.gz
+      │  └─ sub-034_ses-01_T1w.json
+      └─ func/
+         ├─ sub-034_ses-01_task-feedback_events.tsv
+         ├─ sub-034_ses-01_task-feedback_run-1_bold.json 
+         ├─ sub-034_ses-01_task-feedback_run-1_bold.nii.gz
+         ├─ sub-034_ses-01_task-feedback_run-2_bold.json 
+         ├─ sub-034_ses-01_task-feedback_run-2_bold.nii.gz
+         ├─ sub-034_ses-01_task-rest_bold.json 
+         └─ sub-034_ses-01_task-rest_bold.nii.gz
+```
+
+Please forget about the details, but what can be read from the file names above is the following: Each file name consists of a chain of keys (e.g. `sub`, `ses`, `task`, `run`) linked with a hyphen with specific values (e.g. `034`, `01`, `feedback`, `2`), all separated by underscores, and an extension. For instance, file `sub-034_ses-01_task-feedback_run-2_bold.json` contains instances of the `subject`, `session`, `task`, and `run` entities, making it evident from the file name alone that it contains feedback-task data (`task-feedback`) from the first session (`ses-01`) and second run (`run-2`) from subject 034 (`sub-034`).
+
+:::::::::::::
+
+### Human readable: be nice to humans
+
+For humans, it is important that they can easily to figure out what something is, based on its name. Therefore, the name should contain infromation about the content of the file.
+
+<slug picture>
+
+Use a slug: Concise, meaningful description, Usually appended to the end
+
+Apparently slug is a word coming from journalism, meaning something like a short catchline of a story Slug is a line after the URL, also made to optimize Google searches
+
+-   analysis01\_*descriptive-statistics*.R
+
+-   analysis02\_*preregistered-analysis*.R
+
+-   notes01\_*realising-the-problem*.txt
+
+-   analysis03\_*departing-from-the-plan*.R
+
+-   notes02\_*tentative-write-up*.docx
+
+### Make sorting and searching easy
+
+::: instructor
+Inline instructor notes can help inform instructors of timing challenges associated with the lessons. They appear in the "Instructor View"
+:::
+
+::: challenge
+## Challenge 1: Can you improve the file names?
+
+Consider the following list of filenames in a research project (we have added a little bit of information about the content) and come up with new filenames that follow more closely the principles of good file naming:
+
+| filename                                        | content                                                                         |
+|-----------------------------------------|:------------------------------|
+| *6June_focusgrp.docx*                           | Transcripts of focus group about health behavior on June 6, 2019                |
+| *Analysis-script.R*                             | R script for analyzing the survey about political attitudes and health behavior |
+| *first draft essay "Theory of Mind"-new.docx*   | Second draft of an essay about Theory of Mind                                   |
+| *first draft essay "Theory of Mind".docx*       | First draft of an essay about Theory of Mind                                    |
+| *June2019-survey.csv*                           | Survey results political attitudes and health behavior June 2019                |
+| *march29_2019-survey.csv*                       | Survey results political attitudes and health behavior March 29, 2019           |
+| *Notes.txt*                                     | Notes about fieldwork in Rotterdam Ommoord neighbourhood                        |
+| *Survey data cleaned.csv*                       | Cleaned version of survey results about political attitudes and health behavior |
+| *transcript of the focus group May 23 (1).docx* | Transcripts of focus group about political attitudes on May 23, 2020            |
+| *Transcripts.docx*                              | Transcripts of focus group about health behavior on December 16, 2022           |
+
+::: solution
+## A possible solution
+
+| filename (sorted alphabetically)                            |
+|-------------------------------------------------------------|
+| *2019-03-29_health-politics_survey.csv*                     |
+| *2019-06_health-politics_survey.csv*                        |
+| *2019-06-06_health_focusgroup_transcript.docx*              |
+| *2020-05-23_political-attitudes_focusgroup_transcript.docx* |
+| *2022-12-16_health-focusgroup_transcript.docx*              |
+| *analysis_health-politics.R*                                |
+| *essay_theory-of-mind_draft01.docx*                         |
+| *essay_theory-of-mind_draft02.docx*                         |
+| *health-politics_cleaned_survey.csv ommoord-fieldnotes.txt* |
+:::
+:::
+
+## References
+
+The content in this chapter is based on the following great examples:
+
+-   Danielle Navarro - [Project Structure](https://djnavarro.net/slides-project-structure/)
+
+-   Jenny Bryan - [How to name files](https://speakerdeck.com/jennybc/how-to-name-files)
+
+::: keypoints
+-   Use simple but descriptive file names to document and organize research projects
+-   Follow the 3 principles of good file naming: machine readability, human readability, making sorting and searching easy 
+:::
