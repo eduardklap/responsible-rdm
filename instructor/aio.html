@@ -186,6 +186,18 @@
 </div>
 <!--/div.accordion-flush-->
 
+<div class="accordion accordion-flush" id="accordionFlush3">
+  <div class="accordion-item">
+    <div class="accordion-header" id="flush-heading3">
+        <a href="file-naming.html">2. Good file naming practices</a>
+    </div>
+<!--/div.accordion-header-->
+        
+  </div>
+<!--/div.accordion-item-->
+</div>
+<!--/div.accordion-flush-->
+
                 </div>
               </div>
             </div>
@@ -424,6 +436,366 @@ output</li>
 with your lesson</li>
 <li>Run <code>sandpaper::build_lesson()</code> to preview your lesson
 locally</li>
+</ul>
+</div>
+</div>
+</div>
+<!-- 
+Place links that you need to refer to multiple times across pages here. Delete
+any links that you are not going to use. 
+ -->
+</section></section><section id="aio-file-naming"><p>Content from <a href="file-naming.html">Good file naming practices</a></p>
+<hr>
+<p> Last updated on 2023-08-24 | 
+        
+        <a href="https://example.com/FIXME-template-source/edit/main/episodes/file-naming.Rmd" class="external-link">Edit this page <i aria-hidden="true" data-feather="edit"></i></a></p>
+<p>Estimated time <i aria-hidden="true" data-feather="clock"></i> 20 minutes </p>
+<div class="text-end">
+          <button role="button" aria-pressed="false" tabindex="0" id="expand-code" class="pull-right"> Expand All Solutions <i aria-hidden="true" data-feather="plus"></i></button>
+        </div>
+<div class="overview card">
+<h2 class="card-header">Overview</h2>
+<div class="row g-0">
+<div class="col-md-4">
+<div class="card-body">
+<div class="inner">
+<h3 class="card-title">Questions</h3>
+<ul>
+<li>How do I properly name files in my (research) projects?</li>
+</ul>
+</div>
+</div>
+</div>
+<div class="col-md-8">
+<div class="card-body">
+<div class="inner bordered">
+<h3 class="card-title">Objectives</h3>
+<ul>
+<li>Explain principles for good file names</li>
+<li>Demonstrate how to turn not-so-good file names into good file
+names</li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+</div>
+<section id="introduction"><h2 class="section-heading">Introduction<a class="anchor" aria-label="anchor" href="#introduction"></a>
+</h2>
+<hr class="half-width">
+<p>Good metadata and documentation of projects starts with properly
+naming the files and folders. Informative file names can be considered a
+basic but crucial example of metadata.</p>
+<div class="section level4">
+<h4 id="examples">Examples<a class="anchor" aria-label="anchor" href="#examples"></a>
+</h4>
+<p>Here are some examples of good and bad file names:</p>
+<table class="table">
+<colgroup>
+<col width="44%">
+<col width="55%">
+</colgroup>
+<thead><tr class="header">
+<th>
+<span class="emoji" data-emoji="green_square">🟩</span> YES</th>
+<th>
+<span class="emoji" data-emoji="red_square">🟥</span> NO</th>
+</tr></thead>
+<tbody>
+<tr class="odd">
+<td>20220214_SampleSize_Paper.docx</td>
+<td>Paper.docx</td>
+</tr>
+<tr class="even">
+<td>Fig01-histogram-flankertask.png</td>
+<td>Figure 1.png</td>
+</tr>
+<tr class="odd">
+<td>analysis01_descriptive-statistics.R</td>
+<td>Eduard’s filenames Use spaces and punctuation.R</td>
+</tr>
+<tr class="even">
+<td>gambling_data_processed.csv</td>
+<td>Final_data(1).csv</td>
+</tr>
+</tbody>
+</table>
+<p>Can you see why some file names are better than others?</p>
+</div>
+</section><section id="three-principles-for-file-names."><h2 class="section-heading">Three principles for (file) names.<a class="anchor" aria-label="anchor" href="#three-principles-for-file-names."></a>
+</h2>
+<hr class="half-width">
+<p>Good file names are:</p>
+<ol style="list-style-type: decimal">
+<li>machine readable</li>
+<li>human readable</li>
+<li>making sorting and searching easy</li>
+</ol>
+<div class="section level3">
+<h3 id="machine-readable-be-nice-to-machines">Machine readable: be nice to machines<a class="anchor" aria-label="anchor" href="#machine-readable-be-nice-to-machines"></a>
+</h3>
+<p>Keep it simple:</p>
+<ul>
+<li><p>Use letters, numbers, hyphens and underscores… that’s it</p></li>
+<li>
+<p>Avoid spaces, punctuation, accented characters, case
+sensitivity</p>
+<ul>
+<li><p>paper_flanker-task_draft01.docx ✅</p></li>
+<li><p>paper “flanker task” draft01(1).docx ❌</p></li>
+</ul>
+</li>
+<li>
+<p>Never have two files that differ only in case</p>
+<ul>
+<li>Paper ideas.docx ❌</li>
+<li>paper ideas.docx ❌</li>
+</ul>
+</li>
+<li>
+<p>Deliberate use of delimiters</p>
+<ul>
+<li><p>Use hyphen <code>-</code> to mean “different words that are part
+of the same chunk”</p></li>
+<li><p>Use underscore <code>_</code> to separate different chunks of
+metadata</p></li>
+</ul>
+</li>
+</ul>
+<p>Using delimiters in this way makes it easier for software to
+recognize the right files for processing, and it also makes it easier to
+search for files later.</p>
+<div id="example" class="callout prereq">
+<div class="callout-square">
+<i class="callout-icon" data-feather="check"></i>
+</div>
+<div id="example" class="callout-inner">
+<h3 class="callout-title">Example<a class="anchor" aria-label="anchor" href="#example"></a>
+</h3>
+<div class="callout-content">
+<p>Here is an example of the use of hyphens and underscores for file
+names using the <a href="https://bids.neuroimaging.io/" class="external-link">Brain Imaging
+Data Structure</a> format:</p>
+<pre><code>└─ sub-034/
+   └─ ses-01/
+      ├─ anat/
+      │  └─ sub-034_ses-01_T1w.nii.gz
+      │  └─ sub-034_ses-01_T1w.json
+      └─ func/
+         ├─ sub-034_ses-01_task-feedback_events.tsv
+         ├─ sub-034_ses-01_task-feedback_run-1_bold.json 
+         ├─ sub-034_ses-01_task-feedback_run-1_bold.nii.gz
+         ├─ sub-034_ses-01_task-feedback_run-2_bold.json 
+         ├─ sub-034_ses-01_task-feedback_run-2_bold.nii.gz
+         ├─ sub-034_ses-01_task-rest_bold.json 
+         └─ sub-034_ses-01_task-rest_bold.nii.gz</code></pre>
+<p>Please forget about the details, but what can be read from the file
+names above is the following: Each file name consists of a chain of keys
+(e.g. <code>sub</code>, <code>ses</code>, <code>task</code>,
+<code>run</code>) linked with a hyphen with specific values
+(e.g. <code>034</code>, <code>01</code>, <code>feedback</code>,
+<code>2</code>), all separated by underscores, and an extension. For
+instance, file <code>sub-034_ses-01_task-feedback_run-2_bold.json</code>
+contains instances of the <code>subject</code>, <code>session</code>,
+<code>task</code>, and <code>run</code> entities, making it evident from
+the file name alone that it contains feedback-task data
+(<code>task-feedback</code>) from the first session
+(<code>ses-01</code>) and second run (<code>run-2</code>) from subject
+034 (<code>sub-034</code>).</p>
+</div>
+</div>
+</div>
+</div>
+<div class="section level3">
+<h3 id="human-readable-be-nice-to-humans">Human readable: be nice to humans<a class="anchor" aria-label="anchor" href="#human-readable-be-nice-to-humans"></a>
+</h3>
+<p>For humans, it is important that they can easily to figure out what
+something is, based on its name. Therefore, the name should contain
+infromation about the content of the file.</p>
+<p><slug picture></slug></p>
+<p>Use a slug: Concise, meaningful description, Usually appended to the
+end</p>
+<p>Apparently slug is a word coming from journalism, meaning something
+like a short catchline of a story Slug is a line after the URL, also
+made to optimize Google searches</p>
+<ul>
+<li><p>analysis01_<em>descriptive-statistics</em>.R</p></li>
+<li><p>analysis02_<em>preregistered-analysis</em>.R</p></li>
+<li><p>notes01_<em>realising-the-problem</em>.txt</p></li>
+<li><p>analysis03_<em>departing-from-the-plan</em>.R</p></li>
+<li><p>notes02_<em>tentative-write-up</em>.docx</p></li>
+</ul>
+</div>
+<div class="section level3">
+<h3 id="make-sorting-and-searching-easy">Make sorting and searching easy<a class="anchor" aria-label="anchor" href="#make-sorting-and-searching-easy"></a>
+</h3>
+<div id="accordionInstructor1" class="accordion instructor-note accordion-flush">
+<div class="accordion-item">
+<button class="accordion-button instructor-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseInstructor1" aria-expanded="false" aria-controls="collapseInstructor1">
+  <h3 class="accordion-header" id="headingInstructor1">
+  <div class="note-square"><i aria-hidden="true" class="callout-icon" data-feather="edit-2"></i></div>
+  Instructor Note
+  </h3>
+</button>
+<div id="collapseInstructor1" class="accordion-collapse collapse" aria-labelledby="headingInstructor1" data-bs-parent="#accordionInstructor1">
+<div class="accordion-body">
+<p>Inline instructor notes can help inform instructors of timing
+challenges associated with the lessons. They appear in the “Instructor
+View”</p>
+</div>
+</div>
+</div>
+</div>
+<div id="challenge-1-can-you-improve-the-file-names" class="callout challenge">
+<div class="callout-square">
+<i class="callout-icon" data-feather="zap"></i>
+</div>
+<div id="challenge-1-can-you-improve-the-file-names" class="callout-inner">
+<h3 class="callout-title">Challenge 1: Can you improve the file
+names?<a class="anchor" aria-label="anchor" href="#challenge-1-can-you-improve-the-file-names"></a>
+</h3>
+<div class="callout-content">
+<p>Consider the following list of filenames in a research project (we
+have added a little bit of information about the content) and come up
+with new filenames that follow more closely the principles of good file
+naming:</p>
+<table class="table">
+<colgroup>
+<col width="56%">
+<col width="43%">
+</colgroup>
+<thead><tr class="header">
+<th>filename</th>
+<th align="left">content</th>
+</tr></thead>
+<tbody>
+<tr class="odd">
+<td><em>6June_focusgrp.docx</em></td>
+<td align="left">Transcripts of focus group about health behavior on
+June 6, 2019</td>
+</tr>
+<tr class="even">
+<td><em>Analysis-script.R</em></td>
+<td align="left">R script for analyzing the survey about political
+attitudes and health behavior</td>
+</tr>
+<tr class="odd">
+<td><em>first draft essay “Theory of Mind”-new.docx</em></td>
+<td align="left">Second draft of an essay about Theory of Mind</td>
+</tr>
+<tr class="even">
+<td><em>first draft essay “Theory of Mind”.docx</em></td>
+<td align="left">First draft of an essay about Theory of Mind</td>
+</tr>
+<tr class="odd">
+<td><em>June2019-survey.csv</em></td>
+<td align="left">Survey results political attitudes and health behavior
+June 2019</td>
+</tr>
+<tr class="even">
+<td><em>march29_2019-survey.csv</em></td>
+<td align="left">Survey results political attitudes and health behavior
+March 29, 2019</td>
+</tr>
+<tr class="odd">
+<td><em>Notes.txt</em></td>
+<td align="left">Notes about fieldwork in Rotterdam Ommoord
+neighbourhood</td>
+</tr>
+<tr class="even">
+<td><em>Survey data cleaned.csv</em></td>
+<td align="left">Cleaned version of survey results about political
+attitudes and health behavior</td>
+</tr>
+<tr class="odd">
+<td><em>transcript of the focus group May 23 (1).docx</em></td>
+<td align="left">Transcripts of focus group about political attitudes on
+May 23, 2020</td>
+</tr>
+<tr class="even">
+<td><em>Transcripts.docx</em></td>
+<td align="left">Transcripts of focus group about health behavior on
+December 16, 2022</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+<div id="accordionSolution1" class="accordion challenge-accordion accordion-flush">
+<div class="accordion-item">
+<button class="accordion-button solution-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSolution1" aria-expanded="false" aria-controls="collapseSolution1">
+  <h4 class="accordion-header" id="headingSolution1">
+  A possible solution
+  </h4>
+</button>
+<div id="collapseSolution1" class="accordion-collapse collapse" aria-labelledby="headingSolution1" data-bs-parent="#accordionSolution1">
+<div class="accordion-body">
+<table class="table">
+<thead><tr class="header">
+<th>filename (sorted alphabetically)</th>
+</tr></thead>
+<tbody>
+<tr class="odd">
+<td><em>2019-03-29_health-politics_survey.csv</em></td>
+</tr>
+<tr class="even">
+<td><em>2019-06_health-politics_survey.csv</em></td>
+</tr>
+<tr class="odd">
+<td><em>2019-06-06_health_focusgroup_transcript.docx</em></td>
+</tr>
+<tr class="even">
+<td><em>2020-05-23_political-attitudes_focusgroup_transcript.docx</em></td>
+</tr>
+<tr class="odd">
+<td><em>2022-12-16_health-focusgroup_transcript.docx</em></td>
+</tr>
+<tr class="even">
+<td><em>analysis_health-politics.R</em></td>
+</tr>
+<tr class="odd">
+<td><em>essay_theory-of-mind_draft01.docx</em></td>
+</tr>
+<tr class="even">
+<td><em>essay_theory-of-mind_draft02.docx</em></td>
+</tr>
+<tr class="odd">
+<td><em>health-politics_cleaned_survey.csv
+ommoord-fieldnotes.txt</em></td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+</div>
+<p>:::</p>
+</div>
+</section><section id="references"><h2 class="section-heading">References<a class="anchor" aria-label="anchor" href="#references"></a>
+</h2>
+<hr class="half-width">
+<p>The content in this chapter is based on the following great
+examples:</p>
+<ul>
+<li><p>Danielle Navarro - <a href="https://djnavarro.net/slides-project-structure/" class="external-link">Project
+Structure</a></p></li>
+<li><p>Jenny Bryan - <a href="https://speakerdeck.com/jennybc/how-to-name-files" class="external-link">How to name
+files</a></p></li>
+</ul>
+<div id="keypoints1" class="callout keypoints">
+<div class="callout-square">
+<i class="callout-icon" data-feather="key"></i>
+</div>
+<div class="callout-inner">
+<h3 class="callout-title">Keypoints<a class="anchor" aria-label="anchor" href="#keypoints1"></a>
+</h3>
+<div class="callout-content">
+<ul>
+<li>Use simple but descriptive file names to document and organize
+research projects</li>
+<li>Follow the 3 principles of good file naming: machine readability,
+human readability, making sorting and searching easy</li>
 </ul>
 </div>
 </div>
