@@ -45,11 +45,10 @@ Keep it simple:
 -   Use letters, numbers, hyphens and underscores... that's it
 
 -   Avoid spaces, punctuation, accented characters, case sensitivity
-    
+
     -   paper_flanker-task_draft01.docx ✅
 
     -   paper "flanker task" draft01(1).docx ❌
-
 
 -   Never have two files that differ only in case
 
@@ -64,8 +63,7 @@ Keep it simple:
 
 Using delimiters in this way makes it easier for software to recognize the right files for processing, and it also makes it easier to search for files later.
 
-::::::::::: prereq
-
+::: prereq
 ### Example
 
 Here is an example of the use of hyphens and underscores for file names using the [Brain Imaging Data Structure](https://bids.neuroimaging.io/) format:
@@ -87,18 +85,17 @@ Here is an example of the use of hyphens and underscores for file names using th
 ```
 
 Please forget about the details, but what can be read from the file names above is the following: Each file name consists of a chain of keys (e.g. `sub`, `ses`, `task`, `run`) linked with a hyphen with specific values (e.g. `034`, `01`, `feedback`, `2`), all separated by underscores, and an extension. For instance, file `sub-034_ses-01_task-feedback_run-2_bold.json` contains instances of the `subject`, `session`, `task`, and `run` entities, making it evident from the file name alone that it contains feedback-task data (`task-feedback`) from the first session (`ses-01`) and second run (`run-2`) from subject 034 (`sub-034`).
-
-:::::::::::::
+:::
 
 ### Human readable: be nice to humans
 
-For humans, it is important that they can easily to figure out what something is, based on its name. Therefore, the name should contain infromation about the content of the file.
+For humans, it is important that they can easily to figure out what something is, based on its name. Therefore, the name should contain information about the content of the file.
 
-<slug picture>
+![](images/slug_2162041.png){width="100"}
 
-Use a slug: Concise, meaningful description, Usually appended to the end
+Icon by [Smashicons](https://www.freepik.com/icon/slug_2162041)
 
-Apparently slug is a word coming from journalism, meaning something like a short catchline of a story Slug is a line after the URL, also made to optimize Google searches
+A very useful way to add informative content to file names is to use a `slug`: a concise, meaningful description, usually appended to the end. Slug is originally newspaper jargon for a short article name or catchline that captures the essence of a story. It is also used as a name for the human-readable end part of the URL in website publishing, made to optimize search engine results to websites (e.g., `https://instance.com/posts/how-to-make-slugs`). Some examples of short slugs for file names in a research project:
 
 -   analysis01\_*descriptive-statistics*.R
 
@@ -111,6 +108,44 @@ Apparently slug is a word coming from journalism, meaning something like a short
 -   notes02\_*tentative-write-up*.docx
 
 ### Make sorting and searching easy
+
+Put something numeric first to order files
+
+In case of dates, you should follow the YYYY-MM-DD format ([ISO 8601](https://en.wikipedia.org/wiki/ISO_8601) standard) and files can be easily ordered chronologically (if you prefer, YYYYMMDD without hyphens is also fine according to ISO 8601)
+
+-   *2019-01-01*\_original-analysis.R
+
+-   *2019-12-01*\_minor-changes-to-original.R
+
+-   *2022-01-01*\_analysis-at-2-year-follow-up.R
+
+-   *2022-01-02*\_minor-changes-to-follow-up.R
+
+-   *2022-04-01*\_combined-original-and-follow-up.R
+
+Other numbers should left pad with zeros so that all have the same length:
+
+-   *01*\_preface.docx
+
+-   *02*\_introduction.docx
+
+-   *03*\_method.docx
+
+-   etc...
+
+-   *20*\_appendix-09.docx
+
+-   *21*\_appendix-10.docx
+
+If you don't left pad you get:
+
+-   10_figures.R
+
+-   1_data-cleaning.R
+
+-   2_fit-model.R
+
+To make searching easy, include keywords to let a computer find files. Using the *slug* from the previous section is a good way to accomplish this.
 
 ::: instructor
 Inline instructor notes can help inform instructors of timing challenges associated with the lessons. They appear in the "Instructor View"
@@ -149,7 +184,6 @@ Consider the following list of filenames in a research project (we have added a 
 | *essay_theory-of-mind_draft02.docx*                         |
 | *health-politics_cleaned_survey.csv ommoord-fieldnotes.txt* |
 :::
-
 :::
 
 :::
@@ -164,5 +198,5 @@ The content in this chapter is based on the following great examples:
 
 ::: keypoints
 -   Use simple but descriptive file names to document and organize research projects
--   Follow the 3 principles of good file naming: machine readability, human readability, making sorting and searching easy 
+-   Follow the 3 principles of good file naming: machine readability, human readability, making sorting and searching easy
 :::
