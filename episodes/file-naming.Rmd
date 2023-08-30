@@ -113,13 +113,13 @@ Put something numeric first to order files
 
 In case of dates, you should follow the YYYY-MM-DD format ([ISO 8601](https://en.wikipedia.org/wiki/ISO_8601) standard) and files can be easily ordered chronologically (if you prefer, YYYYMMDD without hyphens is also fine according to ISO 8601)
 
--   *2019-01-01*\_original-analysis.R
+-   *2019-01-01*\_original-analysis.R
 
--   *2019-12-01*\_minor-changes-to-original.R
+-   *2019-12-01*\_minor-changes-to-original.R
 
--   *2022-01-01*\_analysis-at-2-year-follow-up.R
+-   *2022-01-01*\_analysis-at-2-year-follow-up.R
 
--   *2022-01-02*\_minor-changes-to-follow-up.R
+-   *2022-01-02*\_minor-changes-to-follow-up.R
 
 -   *2022-04-01*\_combined-original-and-follow-up.R
 
@@ -184,6 +184,7 @@ Consider the following list of filenames in a research project (we have added a 
 | *essay_theory-of-mind_draft02.docx*                         |
 | *health-politics_cleaned_survey.csv ommoord-fieldnotes.txt* |
 :::
+
 :::
 
 :::
