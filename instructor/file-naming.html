@@ -223,7 +223,7 @@
       </div>
       <hr></nav><main id="main-content" class="main-content"><div class="container lesson-content">
         <h1>Good file naming practices</h1>
-        <p> Last updated on 2023-08-24 | 
+        <p> Last updated on 2023-08-30 | 
         
         <a href="https://example.com/FIXME-template-source/edit/main/episodes/file-naming.Rmd" class="external-link">Edit this page <i aria-hidden="true" data-feather="edit"></i></a></p>
         
@@ -358,13 +358,16 @@ the file name alone that it contains feedback-task data
 <h3 id="human-readable-be-nice-to-humans">Human readable: be nice to humans<a class="anchor" aria-label="anchor" href="#human-readable-be-nice-to-humans"></a></h3>
 <p>For humans, it is important that they can easily to figure out what
 something is, based on its name. Therefore, the name should contain
-infromation about the content of the file.</p>
-<p><slug picture></slug></p>
-<p>Use a slug: Concise, meaningful description, Usually appended to the
-end</p>
-<p>Apparently slug is a word coming from journalism, meaning something
-like a short catchline of a story Slug is a line after the URL, also
-made to optimize Google searches</p>
+information about the content of the file.</p>
+<figure><img src="../images/slug_2162041.png" width="100" class="figure mx-auto d-block"></figure><p>Icon by <a href="https://www.freepik.com/icon/slug_2162041" class="external-link">Smashicons</a></p>
+<p>A very useful way to add informative content to file names is to use
+a <code>slug</code>: a concise, meaningful description, usually appended
+to the end. Slug is originally newspaper jargon for a short article name
+or catchline that captures the essence of a story. It is also used as a
+name for the human-readable end part of the URL in website publishing,
+made to optimize search engine results to websites (e.g.,
+<code>https://instance.com/posts/how-to-make-slugs</code>). Some
+examples of short slugs for file names in a research project:</p>
 <ul><li><p>analysis01_<em>descriptive-statistics</em>.R</p></li>
 <li><p>analysis02_<em>preregistered-analysis</em>.R</p></li>
 <li><p>notes01_<em>realising-the-problem</em>.txt</p></li>
@@ -373,6 +376,30 @@ made to optimize Google searches</p>
 </ul></div>
 <div class="section level3">
 <h3 id="make-sorting-and-searching-easy">Make sorting and searching easy<a class="anchor" aria-label="anchor" href="#make-sorting-and-searching-easy"></a></h3>
+<p>Put something numeric first to order files</p>
+<p>In case of dates, you should follow the YYYY-MM-DD format (<a href="https://en.wikipedia.org/wiki/ISO_8601" class="external-link">ISO 8601</a> standard) and
+files can be easily ordered chronologically (if you prefer, YYYYMMDD
+without hyphens is also fine according to ISO 8601)</p>
+<ul><li><p><em>2019-01-01</em>_original-analysis.R</p></li>
+<li><p><em>2019-12-01</em>_minor-changes-to-original.R</p></li>
+<li><p><em>2022-01-01</em>_analysis-at-2-year-follow-up.R</p></li>
+<li><p><em>2022-01-02</em>_minor-changes-to-follow-up.R</p></li>
+<li><p><em>2022-04-01</em>_combined-original-and-follow-up.R</p></li>
+</ul><p>Other numbers should left pad with zeros so that all have the same
+length:</p>
+<ul><li><p><em>01</em>_preface.docx</p></li>
+<li><p><em>02</em>_introduction.docx</p></li>
+<li><p><em>03</em>_method.docx</p></li>
+<li><p>etc…</p></li>
+<li><p><em>20</em>_appendix-09.docx</p></li>
+<li><p><em>21</em>_appendix-10.docx</p></li>
+</ul><p>If you don’t left pad you get:</p>
+<ul><li><p>10_figures.R</p></li>
+<li><p>1_data-cleaning.R</p></li>
+<li><p>2_fit-model.R</p></li>
+</ul><p>To make searching easy, include keywords to let a computer find
+files. Using the <em>slug</em> from the previous section is a good way
+to accomplish this.</p>
 <div id="accordionInstructor1" class="accordion instructor-note accordion-flush">
 <div class="accordion-item">
 <button class="accordion-button instructor-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseInstructor1" aria-expanded="false" aria-controls="collapseInstructor1">
@@ -381,7 +408,7 @@ made to optimize Google searches</p>
   Instructor Note
   </h3>
 </button>
-<div id="collapseInstructor1" class="accordion-collapse collapse" data-bs-parent="#accordionInstructor1" aria-labelledby="headingInstructor1">
+<div id="collapseInstructor1" class="accordion-collapse collapse" aria-labelledby="headingInstructor1" data-bs-parent="#accordionInstructor1">
 <div class="accordion-body">
 <p>Inline instructor notes can help inform instructors of timing
 challenges associated with the lessons. They appear in the “Instructor
@@ -443,7 +470,7 @@ December 16, 2022</td>
   A possible solution
   </h4>
 </button>
-<div id="collapseSolution1" class="accordion-collapse collapse" data-bs-parent="#accordionSolution1" aria-labelledby="headingSolution1">
+<div id="collapseSolution1" class="accordion-collapse collapse" aria-labelledby="headingSolution1" data-bs-parent="#accordionSolution1">
 <div class="accordion-body">
 <table class="table"><thead><tr class="header"><th>filename (sorted alphabetically)</th>
 </tr></thead><tbody><tr class="odd"><td><em>2019-03-29_health-politics_survey.csv</em></td>
@@ -542,8 +569,8 @@ any links that you are not going to use.
   "url": "https://FIXME-template-source.github.io/NA/instructor/file-naming.html",
   "identifier": "https://FIXME-template-source.github.io/NA/instructor/file-naming.html",
   "dateCreated": "2023-08-24",
-  "dateModified": "2023-08-24",
-  "datePublished": "2023-08-29"
+  "dateModified": "2023-08-30",
+  "datePublished": "2023-08-30"
 }
 
   </script><script>
