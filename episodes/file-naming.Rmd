@@ -91,9 +91,7 @@ Please forget about the details, but what can be read from the file names above 
 
 For humans, it is important that they can easily to figure out what something is, based on its name. Therefore, the name should contain information about the content of the file.
 
-![](images/slug_2162041.png){width="100"}
-
-Icon by [Smashicons](https://www.freepik.com/icon/slug_2162041)
+![Icon by [Smashicons](https://www.freepik.com/icon/slug_2162041)](fig/slug_2162041.png){width="100" alt="icon of a friendly green slug with big eyes"}  
 
 A very useful way to add informative content to file names is to use a `slug`: a concise, meaningful description, usually appended to the end. Slug is originally newspaper jargon for a short article name or catchline that captures the essence of a story. It is also used as a name for the human-readable end part of the URL in website publishing, made to optimize search engine results to websites (e.g., `https://instance.com/posts/how-to-make-slugs`). Some examples of short slugs for file names in a research project:
 
