@@ -1,39 +1,38 @@
 ---
-title: 'introduction'
+title: 'Introduction'
 teaching: 10
-exercises: 2
+exercises: 0
 ---
 
-:::::::::::::::::::::::::::::::::::::: questions 
+## Welcome
+Welcome to the online version of [Responsible Research Data Management](https://www.egsh.eur.nl/doctoral-education/phd-course-guide/responsible-research-data-management-rdm/)! This course is offered at the [Erasmus Graduate School of Social Sciences and the Humanities (EGSH)](https://www.egsh.eur.nl/) at [Erasmus University Rotterdam](https://www.eur.nl/) in the Netherlands. But these online materials are free to use for anyone who wants to learn more about research data management (RDM). The materials are also shared under a [CC-BY license](https://eduardklap.github.io/responsible-rdm/LICENSE.html), for others who want to re-use, share or adapt part of the materials in their own courses.
 
-- How do you write a lesson using R Markdown and `{sandpaper}`?
-
-::::::::::::::::::::::::::::::::::::::::::::::::
+::: questions
+-   How do I properly name files in my (research) projects?
+:::
 
 ::::::::::::::::::::::::::::::::::::: objectives
 
-- Explain how to use markdown with the new lesson template
-- Demonstrate how to include pieces of code, figures, and nested challenge blocks
+After completion of this workshop, you will be able to:
+
+- identify legal and privacy issues to be addressed in your research and data management plans
+- apply best practices to document, organize, share, and archive your research data
+- explain the FAIR principles and the importance of metadata for research
+- complete data management plans for your research
+- find available information and support for research data management
 
 ::::::::::::::::::::::::::::::::::::::::::::::::
 
-## Introduction
 
-This is a lesson created via The Carpentries Workbench. It is written in
-[Pandoc-flavored Markdown][pandoc] for static files (with extension `.md`) and
-[R Markdown][r-markdown] for dynamic files that can render code into output
-(with extension `.Rmd`). Please refer to the [Introduction to The Carpentries
-Workbench][carpentries-workbench] for full documentation.
+## About the course
 
-What you need to know is that there are three sections required for a valid
-Carpentries lesson template:
+Increasingly, researchers are expected to make their research data available, in such a way that it is *as open as possible and as closed as necessary*. Additionally, having a data management plan is required by many stakeholders like funding agencies, ethical review boards, or journals.  
 
- 1. `questions` are displayed at the beginning of the episode to prime the
-    learner for the content.
- 2. `objectives` are the learning objectives for an episode displayed with
-    the questions.
- 3. `keypoints` are displayed at the end of the episode to reinforce the
-    objectives.
+But what does this mean, and how can you put this into practice? What are the practical consequences of research data management (RDM) and how do you handle personal/sensitive data and take care of long-term preservation, access, and reuse of your data? These and related questions about RDM are the topic of this workshop.
+
+We will discuss best practices for documenting, organizing, sharing, and archiving your research data, including personal data and working in international collaboration settings.
+
+Effectively managing data can help to optimise research outputs, increase the impact of your research, and support open scientific inquiry. After completing this course, you will be better equipped to manage your data throughout the entire research data lifecycle, from the stage of project planning to the end.
 
 :::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::: instructor
 
@@ -41,77 +40,3 @@ Inline instructor notes can help inform instructors of timing challenges
 associated with the lessons. They appear in the "Instructor View"
 
 ::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
-
-::::::::::::::::::::::::::::::::::::: challenge 
-
-## Challenge 1: Can you do it?
-
-What is the output of this command?
-
-```r
-paste("This", "new", "lesson", "looks", "good")
-```
-
-:::::::::::::::::::::::: solution 
-
-## Output
- 
-```output
-[1] "This new lesson looks good"
-```
-
-:::::::::::::::::::::::::::::::::
-
-
-## Challenge 2: how do you nest solutions within challenge blocks?
-
-:::::::::::::::::::::::: solution 
-
-You can add a line with at least three colons and a `solution` tag.
-
-:::::::::::::::::::::::::::::::::
-::::::::::::::::::::::::::::::::::::::::::::::::
-
-## Figures
-
-You can include figures generated from R Markdown:
-
-
-```r
-pie(
-  c(Sky = 78, "Sunny side of pyramid" = 17, "Shady side of pyramid" = 5), 
-  init.angle = 315, 
-  col = c("deepskyblue", "yellow", "yellow3"), 
-  border = FALSE
-)
-```
-
-<div class="figure" style="text-align: center">
-<img src="fig/introduction-rendered-pyramid-1.png" alt="pie chart illusion of a pyramid"  />
-<p class="caption">Sun arise each and every morning</p>
-</div>
-Or you can use pandoc markdown for static figures with the following syntax:
-
-`![optional caption that appears below the figure](figure url){alt='alt text for
-accessibility purposes'}`
-
-![You belong in The Carpentries!](https://raw.githubusercontent.com/carpentries/logo/master/Badge_Carpentries.svg){alt='Blue Carpentries hex person logo with no text.'}
-
-## Math
-
-One of our episodes contains $\LaTeX$ equations when describing how to create
-dynamic reports with {knitr}, so we now use mathjax to describe this:
-
-`$\alpha = \dfrac{1}{(1 - \beta)^2}$` becomes: $\alpha = \dfrac{1}{(1 - \beta)^2}$
-
-Cool, right?
-
-::::::::::::::::::::::::::::::::::::: keypoints 
-
-- Use `.md` files for episodes when you want static content
-- Use `.Rmd` files for episodes when you need to generate output
-- Run `sandpaper::check_lesson()` to identify any issues with your lesson
-- Run `sandpaper::build_lesson()` to preview your lesson locally
-
-::::::::::::::::::::::::::::::::::::::::::::::::
-
