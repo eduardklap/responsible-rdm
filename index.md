@@ -2,7 +2,7 @@
 site: sandpaper::sandpaper_site
 ---
 
-This is a new lesson built with [The Carpentries Workbench][workbench]. 
+This is a new lesson built with [The Carpentries Workbench][workbench]. This lesson is currently (September 2023) under construction. We are in the progress of digitalizing existing materials from the [Responsible Research Data Management](https://www.egsh.eur.nl/doctoral-education/phd-course-guide/responsible-research-data-management-rdm/) and publishing it in this space. 
 
 
 [workbench]: https://carpentries.github.io/sandpaper-docs
