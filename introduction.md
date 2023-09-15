@@ -23,10 +23,10 @@ In this course, we take a broad perspective and loosely define research data man
 
 - re-use and/or create data and plan for its use;
 - organize, structure, and name data;
-- store it – make it secure, provide access, store and back it up;
-- share it with collaborators and more broadly, publish data and get cited. 
+- store data – make it secure, provide access, store and back it up;
+- share data with collaborators and more broadly, publish data and get cited. 
 
-That is quite a lot to take in, so it makes sense to first ask ourselves why this is all so important. The short answer is that devoting attention to RDM will make your research more robust and efficient. It might also help to prevent disaster. For that, we turn to some examples of data horrors in the next box.
+That is quite a lot to take in, so it makes sense to first ask ourselves why this is so important. The short answer is that devoting attention to RDM will make your research more robust and efficient. It might also help to prevent disaster. For that, we turn to some examples of data horrors in the next box.
 
 ::: prereq
 ### Data Horrors
@@ -40,7 +40,7 @@ Maybe you have experienced it first-hand, but there a lot of ways in which data 
 
 
 
-Increasingly, researchers are expected to make their research data available, in such a way that it is *as open as possible and as closed as necessary*. This is for example stated in the [Netherlands Code of Conduct for Research Integrity (VSNU, 2018)](link).
+Increasingly, researchers are expected to make their research data available, in such a way that it is *as open as possible and as closed as necessary*. This is for example stated in the [Netherlands Code of Conduct for Research Integrity (VSNU, 2018)](https://doi.org/10.17026/dans-2cj-nvwu).
 
 
 
