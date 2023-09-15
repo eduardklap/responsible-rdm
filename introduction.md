@@ -63,6 +63,23 @@ In this letter, the Editor in Chief of *Science* magazine reports that he was in
 
 :::
 
+In the chapter about Data Security we will discuss how (cloud) storage and backup policies can help to prevent disasters like this.
+
+
+## Data annoyances
+Next to data horrors, there are also less disastrous but still inconvenient obstacles to work smoothly with your research data. We will refer to this as *data annoyances*, such as not finding the right files or not being able to exactly replicate previous analyses. Whether something is a data horror of a data annoyance is up for debate, but in practice we want to avoid both.
+
+::: callout
+
+Some questions for discussion:
+
+- Have you ever tried to re-analyze someone else’s data?
+- Have you ever tried to re-analyze your own data a year later?
+
+- How do you think this can be facilitated?
+
+:::
+
 
 Increasingly, researchers are expected to make their research data available, in such a way that it is *as open as possible and as closed as necessary*. This is for example stated in the [Netherlands Code of Conduct for Research Integrity (VSNU, 2018)](https://doi.org/10.17026/dans-2cj-nvwu).
 
