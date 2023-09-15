@@ -4,35 +4,45 @@ teaching: 10
 exercises: 0
 ---
 
-## Welcome
-Welcome to the online version of [Responsible Research Data Management](https://www.egsh.eur.nl/doctoral-education/phd-course-guide/responsible-research-data-management-rdm/)! This course is offered at the [Erasmus Graduate School of Social Sciences and the Humanities (EGSH)](https://www.egsh.eur.nl/) at [Erasmus University Rotterdam](https://www.eur.nl/) in the Netherlands. But these online materials are free to use for anyone who wants to learn more about research data management (RDM). The materials are also shared under a [CC-BY license](https://eduardklap.github.io/responsible-rdm/LICENSE.html), for others who want to re-use, share or adapt part of the materials in their own courses.
-
 ::: questions
--   How do I properly name files in my (research) projects?
+-   Why should I invest in good research data management?
 :::
 
 ::::::::::::::::::::::::::::::::::::: objectives
 
-After completion of this workshop, you will be able to:
-
-- identify legal and privacy issues to be addressed in your research and data management plans
-- apply best practices to document, organize, share, and archive your research data
-- explain the FAIR principles and the importance of metadata for research
-- complete data management plans for your research
-- find available information and support for research data management
+- think about data horrors that can happen and how to avoid them
+- reflect on data annoyances and how to diminish them
+- explain why it is important to properly manage, document, and share research data
 
 ::::::::::::::::::::::::::::::::::::::::::::::::
 
 
-## About the course
+## Why Research Data Management?
 
-Increasingly, researchers are expected to make their research data available, in such a way that it is *as open as possible and as closed as necessary*. Additionally, having a data management plan is required by many stakeholders like funding agencies, ethical review boards, or journals.  
+In this course, we take a broad perspective and loosely define research data management (RDM) as concerning how you:
 
-But what does this mean, and how can you put this into practice? What are the practical consequences of research data management (RDM) and how do you handle personal/sensitive data and take care of long-term preservation, access, and reuse of your data? These and related questions about RDM are the topic of this workshop.
+- re-use and/or create data and plan for its use;
+- organize, structure, and name data;
+- store it – make it secure, provide access, store and back it up;
+- share it with collaborators and more broadly, publish data and get cited. 
 
-We will discuss best practices for documenting, organizing, sharing, and archiving your research data, including personal data and working in international collaboration settings.
+That is quite a lot to take in, so it makes sense to first ask ourselves why this is all so important. The short answer is that devoting attention to RDM will make your research more robust and efficient. It might also help to prevent disaster. For that, we turn to some examples of data horrors in the next box.
 
-Effectively managing data can help to optimise research outputs, increase the impact of your research, and support open scientific inquiry. After completing this course, you will be better equipped to manage your data throughout the entire research data lifecycle, from the stage of project planning to the end.
+::: prereq
+### Data Horrors
+
+Maybe you have experienced it first-hand, but there a lot of ways in which data can be lost or damaged. Data can be lost by accident, due to hardware failure or destruction, data theft is a thing, and it could end up into the wrong hands. Here are some examples of actual academic data horrors:
+
+
+
+
+:::
+
+
+
+Increasingly, researchers are expected to make their research data available, in such a way that it is *as open as possible and as closed as necessary*. This is for example stated in the [Netherlands Code of Conduct for Research Integrity (VSNU, 2018)](link).
+
+
 
 :::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::: instructor
 
