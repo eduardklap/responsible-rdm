@@ -65,7 +65,6 @@ In this letter, the Editor in Chief of *Science* magazine reports that he was in
 
 In the chapter about Data Security we will discuss how (cloud) storage and backup policies can help to prevent disasters like this.
 
-
 ## Data annoyances
 Next to data horrors, there are also less disastrous but still inconvenient obstacles to work smoothly with your research data. We will refer to this as *data annoyances*, such as not finding the right files or not being able to exactly replicate previous analyses. Whether something is a data horror of a data annoyance is up for debate, but in practice we want to avoid both.
 
@@ -74,15 +73,33 @@ Next to data horrors, there are also less disastrous but still inconvenient obst
 Some questions for discussion:
 
 - Have you ever tried to re-analyze someone else’s data?
-- Have you ever tried to re-analyze your own data a year later?
+- Have you ever tried to re-analyze your own data a year later?  
 
 - How do you think this can be facilitated?
 
 :::
 
+::: prereq
+### Example
 
-Increasingly, researchers are expected to make their research data available, in such a way that it is *as open as possible and as closed as necessary*. This is for example stated in the [Netherlands Code of Conduct for Research Integrity (VSNU, 2018)](https://doi.org/10.17026/dans-2cj-nvwu).
+Are you interested in experiencing how it is to re-analyze someone else's data? Or maybe more challenging: are you interested in how others experience re-analyzing your data? Then try a [ReproHack](https://www.reprohack.org/).  
 
+![](fig/reprohack_logo_sm.png){alt="picture of the ReproHack logo"}
+
+During a ReproHack, participants attempt to reproduce published research of their choice from a list of proposed papers with publicly available associated code and data. Participants get to work with other people’s material in a low pressure environment and record their experiences on a number of key aspects, including reproducibility, transparency and reusability of materials. 
+This is a great way to experience in practice what it means to document your data well!
+
+:::
+
+In the chapter on Data organization & documentation we will discuss how proper managing research data can facilitate working with data. Three important principles from the [Briney et al. (2020) article](https://doi.org/10.3897/rio.6.e56508) are useful in this case:  
+
+1. Keep sufficient documentation
+2. Organize files and name them consistently
+3. Version the Files
+
+## The shift towards data sharing
+
+Increasingly, researchers are expected to make their research data available, in such a way that it is *as open as possible and as closed as necessary*. This is for example stated in the [Netherlands Code of Conduct for Research Integrity (VSNU, 2018)](https://doi.org/10.17026/dans-2cj-nvwu). Making data available in a sensible form also requires managing data properly and avoiding data horrors and annoyances. More and more, universities and research funders require data to be available according to the [FAIR principles](https://www.go-fair.org/fair-principles/). We will discuss this in more detail in the chapters on Open Science and FAIR data.
 
 
 :::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::: instructor
