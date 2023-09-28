@@ -10,9 +10,9 @@ exercises: 0
 
 ::::::::::::::::::::::::::::::::::::: objectives
 
-- think about data horrors that can happen and how to avoid them
-- reflect on data annoyances and how to diminish them
-- explain why it is important to properly manage, document, and share research data
+- Identify data horrors that can happen and how to avoid them
+- Reflect on data annoyances and how to diminish them
+- Explain why it is important to properly manage, document, and share research data
 
 ::::::::::::::::::::::::::::::::::::::::::::::::
 
@@ -63,7 +63,7 @@ In this letter, the Editor in Chief of *Science* magazine reports that he was in
 
 :::
 
-In the chapter about Data Security we will discuss how (cloud) storage and backup policies can help to prevent disasters like this.
+In the [chapter about Data Security](security.Rmd) we will discuss how (cloud) storage and backup policies can help to prevent disasters like this.
 
 ## Data annoyances
 Next to data horrors, there are also less disastrous but still inconvenient obstacles to work smoothly with your research data. We will refer to this as *data annoyances*, such as not finding the right files or not being able to exactly replicate previous analyses. Whether something is a data horror of a data annoyance is up for debate, but in practice we want to avoid both.
@@ -91,7 +91,7 @@ This is a great way to experience in practice what it means to document your dat
 
 :::
 
-In the chapter on Data organization & documentation we will discuss how proper managing research data can facilitate working with data. Three important principles from the [Briney et al. (2020) article](https://doi.org/10.3897/rio.6.e56508) are useful in this case:  
+In the chapter [about Data organization & documentation](file-naming.Rmd) we will discuss how proper managing research data can facilitate working with data. Three important principles from the [Briney et al. (2020) article](https://doi.org/10.3897/rio.6.e56508) are useful in this case:  
 
 1. Keep sufficient documentation
 2. Organize files and name them consistently
@@ -99,7 +99,7 @@ In the chapter on Data organization & documentation we will discuss how proper m
 
 ## The shift towards data sharing
 
-Increasingly, researchers are expected to make their research data available, in such a way that it is *as open as possible and as closed as necessary*. This is for example stated in the [Netherlands Code of Conduct for Research Integrity (VSNU, 2018)](https://doi.org/10.17026/dans-2cj-nvwu). Making data available in a sensible form also requires managing data properly and avoiding data horrors and annoyances. More and more, universities and research funders require data to be available according to the [FAIR principles](https://www.go-fair.org/fair-principles/). We will discuss this in more detail in the chapters on Open Science and FAIR data.
+Increasingly, researchers are expected to make their research data available, in such a way that it is *as open as possible and as closed as necessary*. This is for example stated in the [Netherlands Code of Conduct for Research Integrity (VSNU, 2018)](https://doi.org/10.17026/dans-2cj-nvwu). Making data available in a sensible form also requires managing data properly and avoiding data horrors and annoyances. More and more, universities and research funders require data to be available according to the [FAIR principles](https://www.go-fair.org/fair-principles/). We will discuss this in more detail in the [chapter about Open Science and FAIR data](open-fair.Rmd).
 
 
 :::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::: instructor
