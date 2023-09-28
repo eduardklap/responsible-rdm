@@ -60,7 +60,9 @@ contact: 'e.klapwijk@essb.eur.nl'
 # Order of episodes in your lesson
 episodes:
 - introduction.Rmd
+- security.Rmd
 - file-naming.Rmd
+- open-fair.Rmd
 
 # Information for Learners
 learners:
