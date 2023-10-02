@@ -62,7 +62,7 @@ This exercise is taken from the following workshop materials:
 
 ::: solution
 
--   These are the first five links marked as “Did not find resource”:  
+* These are the first five links marked as “Did not find resource”:  
 
   1. http://pss.la.psu.edu/DATARES.HTM
   2. http://www.vanderbilt.edu/~rtucker/data/affinity/alliance/similar/
@@ -70,9 +70,9 @@ This exercise is taken from the following workshop materials:
   4. http://www.princeton.edu/~evoeten/
   5. http://www.cbos.pl/ENGLISH/cbos.en.htm
 
-*   The majority of these websites seems to be personal websites of researchers, mostly using their University's domains. One link is pointing to a very specific resource from the US Census Bureau in the now decommisioned [American Factfinder website](https://ask.census.gov/prweb/PRServletCustom/app/ECORRAsk2_/YACFBFye-rFIz_FoGtyvDRUGg1Uzu5Mn*/!STANDARD?pzuiactionzzz=CXtpbn0rTEpMcGRYOG1vS0tqTFAwaENUZWpvM1NNWEMzZ3p5aFpnWUxzVmw0TjJoc2N6K1NwekJHaENoVTRWQjVrOS8w*).
+* The majority of these websites seems to be personal websites of researchers, mostly using their University's domains. One link is pointing to a very specific resource from the US Census Bureau in the now decommisioned [American Factfinder website](https://ask.census.gov/prweb/PRServletCustom/app/ECORRAsk2_/YACFBFye-rFIz_FoGtyvDRUGg1Uzu5Mn*/!STANDARD?pzuiactionzzz=CXtpbn0rTEpMcGRYOG1vS0tqTFAwaENUZWpvM1NNWEMzZ3p5aFpnWUxzVmw0TjJoc2N6K1NwekJHaENoVTRWQjVrOS8w*).
 
-*   The following content can still be retrieved via the Internet Archive's Way Back Machine (note that although the websites can be retrieved, in most cases the data files cannot). Here are links to snapshots with content:  
+* The following content can still be retrieved via the Internet Archive's Way Back Machine (note that although the websites can be retrieved, in most cases the data files cannot). Here are links to snapshots with content:  
 
   1. https://web.archive.org/web/20021224210645/http://pss.la.psu.edu:80/DATARES.htm 
   2. https://web.archive.org/web/20050916092501/http://www.vanderbilt.edu/~rtucker/data/affinity/alliance/similar/
@@ -80,7 +80,7 @@ This exercise is taken from the following workshop materials:
   4. https://web.archive.org/web/20021018191124/http://www.princeton.edu/~evoeten/
   5. This website is still in the air (October 2023) under a very similar URL: https://cbos.pl/EN/home/home.php
 
-*   Bonus question: the first five links marked as "Found resource":  
+* Bonus question: the first five links marked as "Found resource":
 
   1. http://gking.harvard.edu/stats.shtml (Oct 2023: accessible)
   2. http://www.colorado.edu/IBS/GAD/spacetime/data/Polity.html (Oct 2023: *not* accessible)
@@ -90,8 +90,9 @@ This exercise is taken from the following workshop materials:
 
 **Solutions to avoid broken links:**
 
-*   When available, use a persistent and resolvable identifier (PID): a long-lasting reference to a digital object that gives information about that object regardless of what happens to it. Examples of PIDs include [Digital Object Identifier (DOI)](https://www.doi.org/), [Handle](https://www.handle.net/), and [Archival Resource Key (ARK)](https://arks.org/). 
-*   Use internet archiving services for webpages (especially the Internet Archive: [https://archive.org/web/](https://archive.org/web/)) 
+- When available, use a persistent and resolvable identifier (PID): a long-lasting reference to a digital object that gives information about that object regardless of what happens to it. Examples of PIDs include [Digital Object Identifier (DOI)](https://www.doi.org/), [Handle](https://www.handle.net/), and [Archival Resource Key (ARK)](https://arks.org/). 
+- Use internet archiving services for webpages (especially the Internet Archive: [https://archive.org/web/](https://archive.org/web/)) 
+
 
 :::
 
